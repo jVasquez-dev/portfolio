@@ -1,3 +1,7 @@
+.center-text {
+    text-align: center;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -94,6 +98,10 @@
     align-items: center;
     height: 100%;
     flex-wrap: wrap;
+    &-img{
+        @extend .flex-main;
+        justify-content: center;
+    }
 }
 
 .main-text {
@@ -108,12 +116,22 @@
 
 .simple-text {
     font-size: 1.2rem;
+    line-height: 1.6;
+    list-style-type: "→";
+    list-style-position: inside;
 }
 
 .center-footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.skill-image {
+    background-color: $light;
+    border-radius: 15%;
+    border: 2px solid $bright;
+    margin: 1rem 1.2rem;
 }
 
 .container {
@@ -142,13 +160,14 @@
     &--footer {
         @extend .container;
         height: 2rem;
+        margin-top: 1rem
     }
     &--main {
         @extend .container;
         height: auto;
 
         @include mq(md) {
-            height: calc(100vh - 7rem);
+            height: calc(100vh - 8rem);
         }
     }
 }
