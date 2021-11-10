@@ -102,6 +102,11 @@
         @extend .flex-main;
         justify-content: center;
     }
+    &-project{
+        @extend .flex-main;
+        justify-content: center;
+        align-items: start;
+    }
 }
 
 .main-text {
@@ -119,6 +124,11 @@
     line-height: 1.6;
     list-style-type: "→";
     list-style-position: inside;
+    &-small{
+        @extend .simple-text;
+            font-size: 1rem;
+            line-height: 1.3rem;
+    }
 }
 
 .center-footer {
@@ -132,6 +142,21 @@
     border-radius: 15%;
     border: 2px solid $bright;
     margin: 1rem 1.2rem;
+}
+
+.project-element {
+    width: 250px;
+    height: 500px;
+    margin: 2rem 1rem;
+    border: $bright 1px solid;
+    padding: 1rem;
+    border-radius: 25px;
+}
+
+.project-img {
+    width: 80%;
+    margin: 0 auto;
+    display: block;
 }
 
 .container {
