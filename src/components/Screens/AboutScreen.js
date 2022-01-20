@@ -25,12 +25,12 @@ export const AboutScreen = () => {
             <div>
                 <h1 className="main-text">Skills</h1>
                 <div className="flex-main-img">
-                    <img className="skill-image" src="https://img.icons8.com/ios-glyphs/120/000000/html-5.png" />
-                    <img className="skill-image" src="https://img.icons8.com/ios-glyphs/120/000000/css3.png" />
-                    <img className="skill-image" src="https://img.icons8.com/ios-glyphs/120/000000/react.png" />
-                    <img className="skill-image" src="https://img.icons8.com/material-outlined/120/000000/redux.png" />
-                    <img className="skill-image" src="https://img.icons8.com/windows/120/000000/bootstrap.png" />
-                    <img className="skill-image" src="https://img.icons8.com/ios-filled/120/000000/sass.png" />
+                    <img alt='html5 logo' className="skill-image" src="https://img.icons8.com/ios-glyphs/120/000000/html-5.png" />
+                    <img alt='css3 logo' className="skill-image" src="https://img.icons8.com/ios-glyphs/120/000000/css3.png" />
+                    <img alt='react logo' className="skill-image" src="https://img.icons8.com/ios-glyphs/120/000000/react.png" />
+                    <img alt='redux logo' className="skill-image" src="https://img.icons8.com/material-outlined/120/000000/redux.png" />
+                    <img alt='bootstrap logo' className="skill-image" src="https://img.icons8.com/windows/120/000000/bootstrap.png" />
+                    <img alt='sass logo' className="skill-image" src="https://img.icons8.com/ios-filled/120/000000/sass.png" />
                 </div>
             </div>
 

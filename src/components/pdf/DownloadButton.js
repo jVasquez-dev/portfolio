@@ -12,8 +12,8 @@ export const DownloadButton = () => {
       };
 
     return (
-        <div>
-            <button onClick={saveFile}>download</button>
+        <div className='center-footer my-1'>
+            <button className='button button-simple' onClick={saveFile}>Download</button>
         </div>
     )
 }

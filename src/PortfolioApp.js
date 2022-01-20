@@ -3,7 +3,7 @@ import 'animate.css';
 
 import { AppRouter } from './router/AppRouter';
 
-import './assets/styles/sass/styles.scss';
+import './assets/styles/styles.scss';
 
 
 const PortfolioApp = () => {

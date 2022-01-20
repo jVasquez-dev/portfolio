@@ -14,7 +14,7 @@ export const Navbar = () => {
 
     return (
             <nav className="navbar">
-                <Link to="/" className="nav-logo">Logo</Link>
+                <Link to="/" className="nav-logo">J. Vasquez</Link>
                 <ul 
                     className={ `nav-menu ${ activeClass && "active" }` }
                 >

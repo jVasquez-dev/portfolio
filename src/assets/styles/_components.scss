@@ -1,3 +1,33 @@
+  .button-simple {
+    color: white;
+    font-size: 15px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 50px 13px;
+    outline: 0;
+    border: 1px solid white;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  .button-simple::after {
+    content: "";
+    background-color: $bright;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.3s;
+  }
+
+  .button-simple:hover::after {
+    top: 0px;
+    left: 0px;
+  }
+
 .center-text {
     text-align: center;
 }
@@ -202,7 +232,15 @@
     justify-content: space-around;
 }
 
+@mixin animate($animation,$duration, $direction, $method,$times){
+    animation: $animation $duration $direction $method $times;
+}
 
+@mixin keyframes($name){
+    @keyframes #{$name}{
+        @content;
+    }
+}
 
 @media only screen and (max-width: $md) {
 
